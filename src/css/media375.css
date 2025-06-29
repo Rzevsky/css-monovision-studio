@@ -1,0 +1,159 @@
+@media screen and (max-width: 375px) {
+  :root {
+    --container-padding-inline: 12px;
+    --footer-padding-inline: 12px;
+    --section-padding-top: 60px;
+  }
+
+  .btn {
+    margin-top: 50px;
+    width: 120px;
+    min-height: 30px;
+  }
+
+  .title {
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .promo {
+    padding: 50px 0 30px 0;
+    background-image: url(../img/main_bg.jpg);
+  }
+
+  .promo__title {
+    font-size: 26px;
+  }
+
+  .promo__subtitle {
+    margin-top: 30px;
+    font-size: 16px;
+  }
+
+  .promo__address {
+    position: absolute;
+    bottom: 50px;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .promo__menu {
+
+    padding: 0 25px;
+
+    &>li {
+      /* display: none; */
+      display: none !important;
+    }
+
+    &>li:nth-child(-n+4) {
+      /* display: list-item; */
+      display: list-item !important;
+    }
+  }
+
+
+  .about {
+    padding-top: 50px;
+  }
+
+  .about__title {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .about__text {
+    font-size: 16px;
+  }
+
+  .services {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  .services__items {
+    width: 100%;
+    font-size: 12px;
+
+    & li:first-child::before {
+      display: none;
+    }
+
+    & li:nth-child(3)::before {
+      display: none;
+    }
+  }
+
+  .services__items-subtitle {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .services__text {
+    margin-top: 30px;
+    width: 100%;
+    font-size: 12px;
+  }
+
+  .works__grid {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr) 1.5fr;
+    column-gap: 10px;
+    row-gap: 10px;
+    grid-auto-flow: row;
+  }
+
+  .inspiration__grid {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr) 2.1fr 1fr 0.5fr;
+    /* gap: 20px; */
+
+    #right_vert {
+      grid-row: auto;
+      grid-column: auto;
+    }
+
+    #bottom_wide {
+      grid-row: auto;
+      grid-column: auto;
+    }
+  }
+
+  .customers {
+    padding-top: 50px;
+  }
+
+
+  .customers__wrapper {
+    img {
+      width: calc((100% - 6%) / 2);
+      height: 100%;
+
+    }
+  }
+
+  .footer__wrapper {
+    align-items: center;
+    justify-items: center;
+
+    .footer__social-networking {
+      order: 1;
+    }
+
+    .footer__address {
+      order: 3;
+      text-align: center;
+    }
+
+    .footer__tel {
+      order: 2;
+      text-align: center;
+      justify-self: center;
+      height: 15px;
+    }
+  }
+}
