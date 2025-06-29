@@ -1,7 +1,7 @@
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   :root {
-    --container-padding-inline: 6%;
-    --footer-padding-inline: 6%;
+    --container-padding-inline: 7%;
+    --footer-padding-inline: 7%;
     --section-padding-top: 50px;
   }
 
