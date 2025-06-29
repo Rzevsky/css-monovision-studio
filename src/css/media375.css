@@ -43,17 +43,10 @@
 
     padding: 0 25px;
 
-    &>li {
-      /* display: none; */
-      display: none !important;
-    }
-
-    &>li:nth-child(-n+4) {
-      /* display: list-item; */
-      display: list-item !important;
+    &>li:nth-last-child(-n+11) {
+      display: none;
     }
   }
-
 
   .about {
     padding-top: 50px;
